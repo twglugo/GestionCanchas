@@ -123,7 +123,7 @@ dotnet restore
 >
 
 
-![Vista previa](Scripts/diagrama.png)
+![Vista previa](Scripts/Diagrama.png)
 
 
 ---
