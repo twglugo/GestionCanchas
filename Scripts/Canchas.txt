@@ -1,0 +1,58 @@
+CREATE TABLE IF NOT EXISTS `GestionCanchas`.`Renta` (
+  `Ren_Id` INT NOT NULL,
+  `Ren_Fecha` DATETIME NOT NULL,
+  `Ren_Horas` INT NOT NULL,
+  `Ren_Abono` INT NOT NULL,
+  `Clientes_Cli_Cedula` INT NOT NULL,
+  `Cancha_idCancha` INT NOT NULL,
+  PRIMARY KEY (`Ren_Id`, `Clientes_Cli_Cedula`, `Cancha_idCancha`),
+  INDEX `fk_Renta_Clientes_idx` (`Clientes_Cli_Cedula` ASC) VISIBLE,
+  INDEX `fk_Renta_Cancha1_idx` (`Cancha_idCancha` ASC) VISIBLE,
+  CONSTRAINT `fk_Renta_Clientes`
+    FOREIGN KEY (`Clientes_Cli_Cedula`)
+    REFERENCES `GestionCanchas`.`Clientes` (`Cli_Cedula`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Renta_Cancha1`
+    FOREIGN KEY (`Cancha_idCancha`)
+    REFERENCES `GestionCanchas`.`Cancha` (`Can_Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+
+CREATE TABLE IF NOT EXISTS `GestionCanchas`.`Recibo` (
+  `Rec_Id` INT NOT NULL AUTO_INCREMENT,
+  `Rec_Fecha` DATETIME NOT NULL,
+  `Rec_total` DECIMAL(10,2) NULL,
+  `Rec_Metodo` VARCHAR(50) NULL,
+  `Renta_Ren_Id` INT NOT NULL,
+  PRIMARY KEY (`Rec_Id`),
+  INDEX `fk_Recibo_Renta1_idx` (`Renta_Ren_Id` ASC) VISIBLE,
+  CONSTRAINT `fk_Recibo_Renta1`
+    FOREIGN KEY (`Renta_Ren_Id`)
+    REFERENCES `GestionCanchas`.`Renta` (`Ren_Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+
+
+CREATE TABLE IF NOT EXISTS `GestionCanchas`.`Cancha` (
+  `Can_Id` INT NOT NULL AUTO_INCREMENT,
+  `Can_Numero` INT NOT NULL,
+  `Can_Estado` TINYINT NOT NULL COMMENT '0: Mantenimiento\n1 : Disponible\n\n',
+  `Can_Precio` DECIMAL NOT NULL,
+  PRIMARY KEY (`Can_Id`))
+ENGINE = InnoDB
+
+
+
+CREATE TABLE IF NOT EXISTS `GestionCanchas`.`Clientes` (
+  `Cli_Cedula` INT NOT NULL,
+  `Cli_Nombre` VARCHAR(55) NOT NULL,
+  `Cli_Telefono` INT NOT NULL,
+  PRIMARY KEY (`Cli_Cedula`))
+ENGINE = InnoDB
+
+
+
+
