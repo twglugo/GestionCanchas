@@ -122,9 +122,9 @@ dotnet restore
 
 >
 
-```markdown
+
 ![Vista previa](Scripts/diagrama.png)
-```
+
 
 ---
 
