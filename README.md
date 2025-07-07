@@ -123,14 +123,15 @@ dotnet restore
 >
 
 ```markdown
-Scripts/diagrama.png
+![Vista previa](Scripts/diagrama.png)
 ```
 
 ---
 
 ## 🙋 Autor
 
-- **Miguel Lugo**  
+- **Miguel Lugo**
+- 
 - GitHub: [@twglugo](https://github.com/twglugo)
 
 ---
