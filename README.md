@@ -120,7 +120,7 @@ dotnet restore
 
 ## 📸 Diagrama Entidad-Relación
 
-> Imagen sugerida: Guarda tu diagrama como `Scripts/diagrama.png` y GitHub lo mostrará automáticamente.
+> Imagen sugerida: Guarda tu diagrama como `Scripts/Diagrama.png` y GitHub lo mostrará automáticamente.
 
 ```markdown
 ![Diagrama ER](Scripts/diagrama.png)
