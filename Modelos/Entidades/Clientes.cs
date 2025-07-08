@@ -1,7 +1,7 @@
 
 namespace Modelos.Entidades
 {
-    public class Usuarios
+    public class Clientes
     {
         
         // Atributos de la clase Usuarios
@@ -11,13 +11,13 @@ namespace Modelos.Entidades
 
         // Constructor de la clase Usuarios
 
-        public Usuarios(int cedula, string nombre, int telefono)
+        public Clientes(int cedula, string nombre, int telefono)
         {
             Cedula = cedula;
             Nombre = nombre;
             Telefono = telefono;
         }
-
+        
         // Getters  para los atributos
         public int GetCedula()
         {
