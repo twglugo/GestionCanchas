@@ -1,5 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    
+    <PackageReference Include="MySql.Data" Version="9.3.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    
+  </ItemGroup>
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

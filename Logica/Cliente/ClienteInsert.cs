@@ -1,10 +1,9 @@
 namespace Logica.Cliente
 {
     using MySql.Data.MySqlClient;
-    using Modelos.*;
     using Conexion;
     using System;
-    using Controlador.Control;
+    
 
     public static class ClienteInsert
     {
@@ -43,7 +42,7 @@ namespace Logica.Cliente
 
                 catch (System.Exception e )
                 {
-                    
+                    throw new Exception("Error al insertar el cliente: " + e.Message);
                     throw;
                 }
                     

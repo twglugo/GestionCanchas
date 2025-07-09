@@ -4,14 +4,15 @@ namespace Modelos.Entidades
     {
         // Atributos de la clase Recibo
         private int Id;
-        private Datetime fecha ;
+        private DateTime fecha ;
+        
         private float total;
         private string MetodoPago;
         private int IdRenta;
 
         // Constructor de la clase Recibo
         
-        public Recibo(int id, Datetime fecha, float total, string metodoPago, int idRenta)
+        public Recibo(int id, DateTime fecha, float total, string metodoPago, int idRenta)
         {
             Id = id;
             this.fecha = fecha;
@@ -25,7 +26,7 @@ namespace Modelos.Entidades
         {
             return Id;
         }
-        public Datetime GetFecha()
+        public DateTime GetFecha()
         {
             return fecha;
         }
@@ -42,7 +43,7 @@ namespace Modelos.Entidades
             return IdRenta;
         }
         // Setters para los atributos
-        public void SetFecha(Datetime fecha)
+        public void SetFecha(DateTime fecha)
         {
             this.fecha = fecha;
         }

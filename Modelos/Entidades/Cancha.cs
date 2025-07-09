@@ -17,8 +17,15 @@ namespace Modelos.Entidades
             Estado = estado;
             Precio = precio;
         }
+
+        //Constructor Vacio
+
+        public Cancha()
+        {
+            
+        }
         // Getters para los atributos
-                 
+
         public int GetId()
         {
             return Id;
