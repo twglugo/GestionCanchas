@@ -5,14 +5,14 @@ namespace Modelos.Entidades {
         //Atributos de la clase Renta
 
         private int Id;
-        private datetime Fecha;
+        private DateTime Fecha;
         private int HoraTotal;
         private float Abono;
         private int CedulaUsuario;
         private int IdCancha;
 
         //Constructor de la clase Renta
-        public Renta(int id, datetime fecha, int horaTotal, float abono, int cedulaUsuario, int idCancha)
+        public Renta(int id, DateTime fecha, int horaTotal, float abono, int cedulaUsuario, int idCancha)
         {
             Id = id;
             Fecha = fecha;
@@ -28,7 +28,7 @@ namespace Modelos.Entidades {
             return Id;
         }               
 
-        public datetime GetFecha()
+        public DateTime GetFecha()
         {
             return Fecha;
         }
@@ -52,7 +52,7 @@ namespace Modelos.Entidades {
         }
         //Setters para los atributos
 
-        public void SetFecha(datetime fecha)
+        public void SetFecha(DateTime fecha)
         {
             Fecha = fecha;
         }

@@ -32,7 +32,11 @@ namespace Modelos.Entidades
             return Telefono;
         }
         // Setters para los atributos
-        
+
+        public void SetCedula(int cedula)
+        {
+            Cedula = cedula;
+        }
         public void SetNombre(string nombre)
         {
             Nombre = nombre;

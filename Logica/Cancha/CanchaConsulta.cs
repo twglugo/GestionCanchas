@@ -28,11 +28,12 @@ namespace Logica.Cancha
                     MySqlDataReader read = Comando.ExecuteReader();
                     while (read.Read())
                     {
-                        int Id = read.GetInt32(0);
-                        int Numero = read.GetInt32(1);
-                        bool Estado = read.GetBoolean(2);
-                        float Precio = read.GetFloat(3);
-                        Estadio = new Cancha(Id, Numero, Estado, Precio);
+                        int id = read.GetInt32(0);
+                        int numero = read.GetInt32(1);
+                        bool estado = read.GetBoolean(2);
+                        float precio = read.GetFloat(3);
+                        string direccion = read.GetString(4);
+                        Estadio = new Cancha(id, numero, estado, precio, direccion);
                         CanchaLista.Add(Estadio);
 
                     }

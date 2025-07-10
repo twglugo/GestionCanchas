@@ -20,6 +20,7 @@ namespace Modelos.Entidades
             MetodoPago = metodoPago;
             IdRenta = idRenta;
         }
+       
 
         // Getters para los atributos
         public int GetId()
@@ -43,6 +44,11 @@ namespace Modelos.Entidades
             return IdRenta;
         }
         // Setters para los atributos
+
+        public void SetId(int Id)
+        {
+            this.Id = Id;
+        }
         public void SetFecha(DateTime fecha)
         {
             this.fecha = fecha;
