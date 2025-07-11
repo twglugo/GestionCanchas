@@ -8,6 +8,9 @@ namespace Modelos.Entidades
         private int Cedula;
         private string Nombre;
         private int Telefono;
+        public int _cedula => Cedula;
+        public string _nombre => Nombre;
+        public int _telefono => Telefono;
 
         // Constructor de la clase Usuarios
 

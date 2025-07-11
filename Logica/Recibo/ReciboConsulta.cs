@@ -36,10 +36,7 @@ namespace Logica.Recibo
                         
 
 
-                    }
-
-
-                
+                    }             
                 }
                 catch (MySqlException ex)
                 {

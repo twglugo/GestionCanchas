@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionCanchas.app", "GestionCanchas.app\GestionCanchas.app.csproj", "{19E03B57-CA60-4D71-9D2B-E77AF424E2D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionCanchas.app", "GestionCanchas.app\GestionCanchas.app.csproj", "{19E03B57-CA60-4D71-9D2B-E77AF424E2D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlador", "Controlador\Controlador.csproj", "{D1AC3AD0-F499-4F5C-9897-209F460983D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controlador", "Controlador\Controlador.csproj", "{D1AC3AD0-F499-4F5C-9897-209F460983D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{72D7AD34-10AB-4F32-A5B8-B9B8819C23D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logica", "Logica\Logica.csproj", "{72D7AD34-10AB-4F32-A5B8-B9B8819C23D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Modelos\Modelos.csproj", "{27924BFE-D8D6-4CEC-AFBC-C67B70CBC01F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modelos", "Modelos\Modelos.csproj", "{27924BFE-D8D6-4CEC-AFBC-C67B70CBC01F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conexion", "Conexion\Conexion.csproj", "{5E1E280C-F66F-4605-A819-5C531417D77C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conexion", "Conexion\Conexion.csproj", "{5E1E280C-F66F-4605-A819-5C531417D77C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scripts", "Scripts\Scripts.csproj", "{DA45787E-CC66-45CC-9A25-CC0539BD447A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scripts", "Scripts\Scripts.csproj", "{DA45787E-CC66-45CC-9A25-CC0539BD447A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestinCanchas.ui", "GestinCanchas.ui\GestinCanchas.ui.csproj", "{5DDB9EA8-4941-4695-95F8-C060AB85290B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,8 +99,23 @@ Global
 		{DA45787E-CC66-45CC-9A25-CC0539BD447A}.Release|x64.Build.0 = Release|Any CPU
 		{DA45787E-CC66-45CC-9A25-CC0539BD447A}.Release|x86.ActiveCfg = Release|Any CPU
 		{DA45787E-CC66-45CC-9A25-CC0539BD447A}.Release|x86.Build.0 = Release|Any CPU
+		{5DDB9EA8-4941-4695-95F8-C060AB85290B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DDB9EA8-4941-4695-95F8-C060AB85290B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DDB9EA8-4941-4695-95F8-C060AB85290B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5DDB9EA8-4941-4695-95F8-C060AB85290B}.Debug|x64.Build.0 = Debug|Any CPU
+		{5DDB9EA8-4941-4695-95F8-C060AB85290B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5DDB9EA8-4941-4695-95F8-C060AB85290B}.Debug|x86.Build.0 = Debug|Any CPU
+		{5DDB9EA8-4941-4695-95F8-C060AB85290B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DDB9EA8-4941-4695-95F8-C060AB85290B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DDB9EA8-4941-4695-95F8-C060AB85290B}.Release|x64.ActiveCfg = Release|Any CPU
+		{5DDB9EA8-4941-4695-95F8-C060AB85290B}.Release|x64.Build.0 = Release|Any CPU
+		{5DDB9EA8-4941-4695-95F8-C060AB85290B}.Release|x86.ActiveCfg = Release|Any CPU
+		{5DDB9EA8-4941-4695-95F8-C060AB85290B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7C0C5C9-F818-466A-85B8-E19D64383028}
 	EndGlobalSection
 EndGlobal

@@ -5,7 +5,7 @@ namespace Logica.Cliente
     using System;
     
 
-    public static class ClienteInsert
+    public  class ClienteInsert
     {
 
         
@@ -13,7 +13,7 @@ namespace Logica.Cliente
 
         //Insertar un cliente
 
-        public static bool InsertarCliente(int Cedula, string Nombre, int Telefono)
+        public  bool InsertarCliente(int Cedula, string Nombre, int Telefono)
         {
             bool resultado = false;
             using(MySqlConnection Conectar = Conecta.ObtenerConexion())
@@ -43,7 +43,7 @@ namespace Logica.Cliente
                 catch (System.Exception e )
                 {
                     throw new Exception("Error al insertar el cliente: " + e.Message);
-                    throw;
+                    
                 }
                     
 
