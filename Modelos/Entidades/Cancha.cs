@@ -5,7 +5,7 @@ namespace Modelos.Entidades
         // Atributos de la clase Cancha
 
         private int Id;
-        private int Numero;
+        private static int Numero ;
         private bool Estado;
         private float Precio;
 
@@ -15,7 +15,7 @@ namespace Modelos.Entidades
         public Cancha(int id, int numero, bool estado, float precio, string direccion)
         {
             Id = id;
-            Numero = numero;
+            Numero += 1;
             Estado = estado;
             Precio = precio;
             Direccion = direccion;
@@ -23,7 +23,10 @@ namespace Modelos.Entidades
 
         //Constructor Vacio
 
-        
+        public Cancha()
+        {
+            
+        }
         // Getters para los atributos
 
         public int GetId()

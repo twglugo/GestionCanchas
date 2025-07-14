@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Controlador;
 
-namespace GestinCanchas.ui.Views
+namespace GestinCanchas.ui.Views.ClienteViewUi
 {
     /// <summary>
     /// Lógica de interacción para ClienteView.xaml
@@ -24,7 +25,7 @@ namespace GestinCanchas.ui.Views
         {
             InitializeComponent();
             LlenarTabla();
-           
+
         }
 
         public void LlenarTabla()
@@ -33,8 +34,8 @@ namespace GestinCanchas.ui.Views
             Consultatotal.ItemsSource = Prueba.ConsultaTotalCliente();
         }
 
-        
-        
+
+
 
         private void Prueba1_Click(object sender, RoutedEventArgs e)
         {

@@ -1,0 +1,40 @@
+﻿<Window x:Class="GestinCanchas.ui.Views.CanchaViewUi.CanchaView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestinCanchas.ui.Views.CanchaViewUi"
+        mc:Ignorable="d"
+        Title="CanchaView" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="196,36,196,239">
+
+            <Label>Direccion </Label>
+            <TextBox   x:Name="Direccion"
+                   Text =" " 
+                   Margin="0,0,0,10" BorderBrush="#FF1044E0"
+        />
+            <Label>Precio</Label>
+            <TextBox x:Name="Precio"
+                   Text ="" 
+                   Margin="0,0,0,10" BorderBrush="#FF2251DC"
+         />
+
+            <Button   x:Name="InsertarCancha" 
+              Content="Agregar Cancha" 
+              BorderBrush="#FF8C3232" 
+              FontFamily="Tahoma" 
+              Foreground="#FF0E0B0B" 
+              Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" RenderTransformOrigin="0.959,-0.943" Height="52" Width="222" Click="InsertarCancha_Click"/>
+
+
+        </StackPanel>
+
+        <DataGrid x:Name="ConsultaTotalCancha" 
+              Margin="102,217,102,24" 
+              AutoGenerateColumns="True"
+              IsReadOnly="True"
+              
+        />
+    </Grid>
+</Window>

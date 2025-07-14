@@ -14,6 +14,8 @@ namespace Logica.Cancha
 
         public CanchasInsert(Cancha Estadio) { this.Estadio = Estadio; }
 
+        public CanchasInsert(){}
+
 
         //Metodo de Inserccion
 
@@ -37,7 +39,7 @@ namespace Logica.Cancha
                 }
                 catch (MySqlException ex)
                 {
-                    throw new ($"Comprobar error{ex.Message}");
+                    throw new($"Comprobar error{ex.Message}");
                 }
                 catch (System.Exception)
                 {
@@ -46,7 +48,7 @@ namespace Logica.Cancha
                 }
             }
 
-            
+
 
         }
 
