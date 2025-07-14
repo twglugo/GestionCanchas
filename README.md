@@ -27,6 +27,7 @@ Micanchas/
 ├── Modelos/            # Clases que representan entidades de BD
 ├── Scripts/            # Scripts SQL para crear la BD y tablas
 ├── GestionCanchas.app/ # Proyecto principal de la interfaz gráfica
+├── GestionCanchas.ui/  # Interfaz mediante WPF -> Pruebas
 └── GestionCanchas.sln  # Archivo de solución (Visual Studio)
 ```
 
@@ -49,16 +50,17 @@ Puedes encontrar el script completo en: `Scripts/Canchas.txt`
 
 ```sql
 CREATE TABLE Clientes (
-  Cli_Cedula INT PRIMARY KEY,
+  Cli_Cedula Long PRIMARY KEY,
   Cli_Nombre VARCHAR(55) NOT NULL,
-  Cli_Telefono INT NOT NULL
+  Cli_Telefono Long NOT NULL
 );
 
 CREATE TABLE Cancha (
   Can_Id INT PRIMARY KEY AUTO_INCREMENT,
   Can_Numero INT NOT NULL,
   Can_Estado TINYINT NOT NULL, -- 0: Mantenimiento | 1: Disponible
-  Can_Precio DECIMAL NOT NULL
+  Can_Precio DECIMAL NOT NULL,
+  Can_Direccion VARCHAR(60) NOT NULL
 );
 
 CREATE TABLE Renta (
